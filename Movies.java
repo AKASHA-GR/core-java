@@ -62,6 +62,8 @@ class Movies{
 		System.out.println(movies);
 		movies="30.Gandhada Gudi";
 		System.out.println(movies);
-		movies="31.Maurya";	
+		movies="31.Maurya";
+		System.out.println(movies);
 	}
+
 }
