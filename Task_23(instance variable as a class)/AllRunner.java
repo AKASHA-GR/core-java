@@ -1,6 +1,44 @@
 class AllRunner{
 	public static void main(String... args){
 		
+		Price price = new Price(1200,29);
+		Sound sound = new Sound("tin tin tin...");
+		BellTime bellTime = new BellTime("12:00","Digital Clock");
+		Frequency frequency = new Frequency(50,"Medium");
+		FindPlace findPlace = new FindPlace("Schools");
+		
+		Bell bell = new Bell("Electronic Bell","Silver",true,2.5,8,price,sound,bellTime,frequency,findPlace);
+		bell.getBell();
+		System.out.println("");
+		
+		
+		Fish fish = new Fish("Betta","egg-layer");
+		Plant plant = new Plant("Anubias barteri","Rhizome type");
+		Quantity quanlity = new Quantity(30,true);
+		AquaStone aquaStone = new AquaStone("Seiryu","hardens water");
+		AquaSize aquaSize = new AquaSize("30 X 18 X 16");
+		
+		Aquarium aquarium = new Aquarium("AquaEI","Glass","Cude",6000,true,fish,plant,quanlity,aquaStone,aquaSize);
+		aquarium.getAquarium();
+		System.out.println("");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		Weight weight = new Weight(800);
 		Rgb rgb = new Rgb("Red");
 		Color color = new Color();
@@ -67,11 +105,11 @@ class AllRunner{
 		
 		History history = new History("China");
 		Year year = new Year(2735);
-		Quality quanlity = new Quality();
+		Quality quality = new Quality();
 		Size size = new Size();
 		Aproved aproved = new Aproved();
 		
-		Tea tea = new Tea("Green tea","Karnataka","Helgth",80.00,4,history,year,quanlity,size,aproved);
+		Tea tea = new Tea("Green tea","Karnataka","Helgth",80.00,4,history,year,quality,size,aproved);
 		tea.getTea();
 		history.getHistory();
 		year.getYear();
