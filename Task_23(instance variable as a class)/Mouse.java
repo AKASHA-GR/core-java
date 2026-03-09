@@ -46,6 +46,39 @@ class Mouse{
 		System.out.println("The mouse rating:"+this.rating);
 		System.out.println("The mouse price:"+this.price);
 		System.out.println("The numberOfMouse:"+this.numberOfMouse);
+		
+		
+		
+		
+		if(weight != null){
+			this.weight.getWeight();			
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(rgb != null){
+			this.rgb.getRgb();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(color != null){
+			this.color.getColor();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(button != null){
+			this.button.getButton();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(wire != null){
+			this.wire.getWire();
+		}else{
+			System.out.println("there is is not defined...");
+		}
 	}
 	
 	

@@ -30,5 +30,39 @@ class Motor{
 		System.out.println("The name of the model:"+this.model);
 		System.out.println("The name of the price:"+this.price);
 		System.out.println("The name of the weight:"+this.weight);
+		
+		
+		
+		
+		if(invented != null){
+			this.invented.getInvented();		
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(material != null){
+			this.material.getMaterial();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(current != null){
+			this.current.getCurrent();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(magnet != null){
+			this.magnet.getMagnet();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(shape != null){
+			this.shape.getShape();
+		}else{
+			System.out.println("there is is not defined...");
+		}
 	}
+	
 }

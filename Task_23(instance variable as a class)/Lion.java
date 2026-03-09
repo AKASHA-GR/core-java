@@ -31,6 +31,40 @@ class Lion{
 		System.out.println("The lion population:" +this.population);
 		System.out.println("The lion weight:" +this.weight);
 		System.out.println("The lion height:" +this.height);
+		
+		
+		
+		
+		if(lifespan != null){
+			this.lifespan.getLifespan();			
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(reast != null){
+			this.reast.getReast();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(run != null){
+			this.run.getRun();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(lioncolor != null){
+			this.lioncolor.getLionColor();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(nails != null){
+			this.nails.getNails();
+		}else{
+			System.out.println("there is is not defined...");
+		}
 	}
+	
 	
 }

@@ -30,5 +30,40 @@ class Tea{
 		System.out.println("The type of Tea:" +this.type);
 		System.out.println("The price of Tea:" +this.price);
 		System.out.println("The numberofKG of Tea:" +this.numberofKG);
+		
+		if(history != null){
+			this.history.getHistory();			
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(year != null){
+			this.year.getYear();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(history != null){
+			this.quality.getQuality();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(history != null){
+			this.size.getSize();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(history != null){
+			this.aproved.getAproved();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		
+		
+		
+		
 	}
 }

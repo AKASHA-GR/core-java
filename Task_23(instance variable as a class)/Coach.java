@@ -31,5 +31,39 @@ class Coach{
 		System.out.println("The age of the coach:"+this.age);
 		System.out.println("The weight of the coach:"+this.weight);
 		System.out.println("The height of the coach:"+this.height);
+		
+		
+		
+		
+		
+		if(salary != null){
+			this.salary.getSalary();		
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(type != null){
+			this.type.getType();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(job != null){
+			this.job.getJob();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(field != null){
+			this.field.getField();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(qualification != null){
+			this.qualification.getQualification();
+		}else{
+			System.out.println("there is is not defined...");
+		}
 	}
 }

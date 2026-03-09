@@ -29,6 +29,40 @@ class Ipl{
 		System.out.println("The price :" +this.price);
 		System.out.println("The teamLeder :" +this.teamLeder);
 		System.out.println("The location :" +this.location);
+		
+		
+		
+		
+		
+		if(bat != null){
+			this.bat.getBat();		
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(sensor != null){
+			this.sensor.getSensor();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(iplsize != null){
+			this.iplsize.getIplSize();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(kit != null){
+			this.kit.getKit();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(area != null){
+			this.area.getArea();
+		}else{
+			System.out.println("there is is not defined...");
+		}
 	}
 	
 }

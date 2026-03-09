@@ -29,5 +29,42 @@ class File{
 		System.out.println("The type of file:"+this.type);
 		System.out.println("The size of file:"+this.size);
 		System.out.println("The isopen of file:"+this.isopen);
+		
+		
+		
+		
+		
+		if(create != null){
+			this.create.getFileDate();			
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(opSystem != null){
+			this.opSystem.getFileOpSystem();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(extension != null){
+			this.extension.getExtension();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(modification != null){
+			this.modification.getModification();
+		}else{
+			System.out.println("there is is not defined...");
+		}
+		
+		if(folder != null){
+			this.folder.getFolder();
+		}else{
+			System.out.println("there is is not defined...");
+		}
 	}
+	
+	
+	
 }
