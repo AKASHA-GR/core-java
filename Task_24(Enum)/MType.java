@@ -1,0 +1,7 @@
+enum MType{
+	BUTTON,
+	OYSTER,
+	SHIITAKE,
+	PORTOBELLO,
+	MILKY;
+}

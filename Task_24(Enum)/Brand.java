@@ -1,0 +1,7 @@
+enum Brand{
+	KINGFISHER,
+	BUDWEISER,
+	CORONA,
+	HEINEKEN,
+	CARLSBERG;
+}

@@ -1,0 +1,9 @@
+enum Flavor{
+
+	CLASSIC,
+	CHOCOLATE,
+	ELACHI,
+	JUNIOR,
+	MOTHER;
+
+}
