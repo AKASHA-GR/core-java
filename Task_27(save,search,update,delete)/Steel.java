@@ -24,8 +24,10 @@ class Steel {
 
     boolean search(String name) {
         System.out.println("Search method executing");
+		System.out.println("The name:"+name);
 
         if (name != null && this.steelNames != null) {
+			System.out.println("The name and steelNames array is not null.");
             for (String temp : this.steelNames) {
                 if (name.equals(temp)) {
                     return true;
@@ -37,9 +39,11 @@ class Steel {
 
     void update(int index, String name) {
         System.out.println("Update using index");
+		System.out.println("The index:"+index);
+		System.out.println("The name:"+name);
 
         if (this.steelNames == null || name == null) {
-            System.out.println("Invalid data");
+            System.out.println("name or steelNames array is null.");
             return;
         }
 
@@ -53,8 +57,11 @@ class Steel {
 
     boolean update(String oldName, String newName) {
         System.out.println("Update using oldName and newName");
+		System.out.println("The oldName:"+oldName);
+		System.out.println("The newName:"+newName);
 
         if (this.steelNames == null || oldName == null || newName == null) {
+			System.old.println("The oldName or newName or steelNames is null.");
             return false;
         }
 
@@ -69,8 +76,10 @@ class Steel {
 
     boolean delete(int index) {
         System.out.println("Delete using index");
+		System.out.println("The index:"+index);
 
         if (this.steelNames == null) {
+			System.out.println("The steelNames array is null.");
             return false;
         }
 

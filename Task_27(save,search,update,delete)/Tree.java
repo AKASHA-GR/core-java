@@ -61,9 +61,11 @@ class Tree{
 	
     void update(int index, String name) {
         System.out.println("Update using index");
+		System.out.println("The index:"+index);
+		System.out.println("The name:"+name);
 
         if (this.names == null || name == null) {
-            System.out.println("Invalid data");
+            System.out.println("The name or names array is null.");
             return;
         }
 
@@ -78,8 +80,11 @@ class Tree{
     
     boolean update(String oldName, String newName) {
         System.out.println("Update using oldName and newName");
+		System.out.println("The oldName :"+oldName);
+		System.out.println("The newName :"+newName);
 
         if (this.names == null || oldName == null || newName == null) {
+			System.out.println("The oldName or newName or names array is null.");
             return false;
         }
 
@@ -95,8 +100,10 @@ class Tree{
     
     boolean delete(int index) {
         System.out.println("Delete using index");
+		System.out.println("The index:"+index);
 
         if (this.names == null) {
+			System.out.println("The names array is null.");
             return false;
         }
 
@@ -110,8 +117,10 @@ class Tree{
    
     boolean delete(String name) {
         System.out.println("Delete using name");
+		System.out.println("The name:"+name);
 
         if (this.names == null || name == null) {
+			System.out.println("The name or names array is null.");
             return false;
         }
 

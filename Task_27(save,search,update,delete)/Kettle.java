@@ -26,11 +26,13 @@ class Kettle {
 
     boolean search(String name) {
         System.out.println("Search method executing in Kettle class");
+		System.out.println("The name:"+name);
 
         if (name != null && this.kettleNames != null) {
+			System.out.println("The name and kettleNames array is not null.");
             for (String temp : this.kettleNames) {
                 System.out.println("Comparing with: " + temp);
-                if (name.equals(temp)) {   
+                if (name == temp) { 
                     return true;
                 }
             }
@@ -40,9 +42,11 @@ class Kettle {
 
     void update(int index, String name) {
         System.out.println("Update using index");
+		System.out.println("The index:"+index);
+		System.out.println("The name:"+name);
 
         if (this.kettleNames == null || name == null) {
-            System.out.println("Invalid data");
+            System.out.println("The name or kettleNames array is null.");
             return;
         }
 
@@ -56,8 +60,11 @@ class Kettle {
 
     boolean update(String oldName, String newName) {
         System.out.println("Update using oldName and newName");
+		System.out.println("The oldName:"+oldName);
+		System.out.println("The newName:"+newName);
 
         if (this.kettleNames == null || oldName == null || newName == null) {
+			System.out.println("The oldName or newName or kettleNames array is null.");
             return false;
         }
 
@@ -73,8 +80,10 @@ class Kettle {
 
     boolean delete(int index) {
         System.out.println("Delete using index");
+		System.out.println("The index:"+index)
 
         if (this.kettleNames == null) {
+			System.out.println("The kettleNames array is null.");
             return false;
         }
 
@@ -87,15 +96,18 @@ class Kettle {
 
     boolean delete(String name) {
         System.out.println("Delete using name");
+		System.out.println("The name:"+name);
 
         if (this.kettleNames == null || name == null) {
+			System.out.println("The name or kettleNames array is null.")
             return false;
         }
 
         for (int i = 0; i < kettleNames.length; i++) {
             System.out.println("Comparing with: " + kettleNames[i]);
             if (name.equals(kettleNames[i])) {   
-                kettleNames[i] = null;           
+                kettleNames[i] = null;
+				System.out.println("The name is deleted.");
                 return true;
             }
         }

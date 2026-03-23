@@ -21,7 +21,7 @@ class ScooterRunner{
 		
 		System.out.println();
 
-        scooter.update(2, "Updated NTORQ");
+        scooter.update(2, " NTORQ");
 
         System.out.println();
 

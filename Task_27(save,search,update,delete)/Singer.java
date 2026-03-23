@@ -76,8 +76,11 @@ class Singer{
     
     boolean update(String oldName, String newName) {
         System.out.println("Update using oldName and newName");
+		System.out.println("The oldName:"+oldName);
+		System.out.println("The newName:"+newName);
 
         if (this.names == null || oldName == null || newName == null) {
+			System.out.println("The oldName or newName or names array is null.");
             return false;
         }
 
@@ -93,12 +96,14 @@ class Singer{
     
     boolean delete(int index) {
         System.out.println("Delete using index");
+		System.out.println("The index:"+name);
 
         if (this.names == null) {
+			System.out.println("The names array is null.");
             return false;
         }
 
-        if (index >= 0 && index < this.names.length) { // ✅ FIXED
+        if (index >= 0 && index < this.names.length) { 
             this.names[index] = null;
             return true;
         }
@@ -108,8 +113,10 @@ class Singer{
     
     boolean delete(String name) {
         System.out.println("Delete using name");
+		System.out.println("The name:"+name);
 
         if (this.names == null || name == null) {
+			System.out.println("The name or names array is null.");
             return false;
         }
 

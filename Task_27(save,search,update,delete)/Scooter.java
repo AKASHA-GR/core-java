@@ -60,13 +60,15 @@ class Scooter{
 	
     void update(int index, String name) {
         System.out.println("Update using index");
+		System.out.println("The index:"+index);
+		System.out.println("The name:"+name);
 
         if (this.names == null || name == null) {
-            System.out.println("Invalid data");
+            System.out.println("The name or names array is null.");
             return;
         }
 
-        if (index >= 0 && index < this.names.length) { // ✅ FIXED
+        if (index >= 0 && index < this.names.length) { 
             this.names[index] = name;
             System.out.println("Updated at index: " + index);
         } else {
@@ -77,14 +79,18 @@ class Scooter{
     
     boolean update(String oldName, String newName) {
         System.out.println("Update using oldName and newName");
+		System.out.println("The oldName:"+oldName);
+		System.out.println("The newName:"+newName);
 
         if (this.names == null || oldName == null || newName == null) {
+			System.out.println("The oldName or newName or names array is null.");
             return false;
         }
 
         for (int i = 0; i < names.length; i++) {
-            if (oldName.equals(names[i])) { 
-                names[i] = newName;         
+            if (oldName == names[i]) { 
+                names[i] = newName;  
+				System.out.println("The name is updated.");
                 return true;
             }
         }
@@ -94,12 +100,14 @@ class Scooter{
     
     boolean delete(int index) {
         System.out.println("Delete using index");
+		System.out.println("The index:"+index);
 
         if (this.names == null) {
+			System.out.println("The names array is null.");
             return false;
         }
 
-        if (index >= 0 && index < this.names.length) { // ✅ FIXED
+        if (index >= 0 && index < this.names.length) {
             this.names[index] = null;
             return true;
         }
@@ -109,13 +117,15 @@ class Scooter{
     
     boolean delete(String name) {
         System.out.println("Delete using name");
+		System.out.println("The name:"+name);
 
         if (this.names == null || name == null) {
+			System.out.println("The name or names array is null.");
             return false;
         }
 
         for (int i = 0; i < names.length; i++) {
-            if (name.equals(names[i])) { 
+            if (name == names[i]) { 
                 names[i] = null;         
                 return true;
             }

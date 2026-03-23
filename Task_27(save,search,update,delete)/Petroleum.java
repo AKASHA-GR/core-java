@@ -77,12 +77,14 @@ class Petroleum{
         System.out.println("Update using oldName and newName");
 
         if (this.products == null || oldName == null || newName == null) {
+			System.out.println("The oldName or newName or products array is null.");
             return false;
         }
 
         for (int i = 0; i < products.length; i++) {
             if (oldName.equals(products[i])) { 
-                products[i] = newName;        
+                products[i] = newName; 
+				System.out.println("The newName is updated.");
                 return true;
             }
         }
@@ -92,8 +94,10 @@ class Petroleum{
     
     boolean delete(int index) {
         System.out.println("Delete using index");
+		System.out.println("The index:"+index);
 
         if (this.products == null) {
+			System.out.println("The products array is null.");
             return false;
         }
 
@@ -107,8 +111,10 @@ class Petroleum{
    
     boolean delete(String name) {
         System.out.println("Delete using name");
+		System.out.println("The name:"+name);
 
         if (this.products == null || name == null) {
+			System.out.println("The name or products array is null.");
             return false;
         }
 
