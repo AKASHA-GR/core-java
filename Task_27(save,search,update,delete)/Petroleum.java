@@ -82,7 +82,7 @@ class Petroleum{
         }
 
         for (int i = 0; i < products.length; i++) {
-            if (oldName.equals(products[i])) { 
+            if (oldName == products[i]) { 
                 products[i] = newName; 
 				System.out.println("The newName is updated.");
                 return true;
@@ -119,7 +119,7 @@ class Petroleum{
         }
 
         for (int i = 0; i < products.length; i++) {
-            if (name.equals(products[i])) { 
+            if (name == products[i]) { 
                 products[i] = null;         
                 return true;
             }

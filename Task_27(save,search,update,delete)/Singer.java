@@ -85,7 +85,7 @@ class Singer{
         }
 
         for (int i = 0; i < names.length; i++) {
-            if (oldName.equals(names[i])) { 
+            if (oldName == names[i]) { 
                 names[i] = newName;         
                 return true;
             }
@@ -96,7 +96,7 @@ class Singer{
     
     boolean delete(int index) {
         System.out.println("Delete using index");
-		System.out.println("The index:"+name);
+		System.out.println("The index:"+index);
 
         if (this.names == null) {
 			System.out.println("The names array is null.");
@@ -121,7 +121,7 @@ class Singer{
         }
 
         for (int i = 0; i < names.length; i++) {
-            if (name.equals(names[i])) { 
+            if (name == names[i]) { 
                 names[i] = null;         
                 return true;
             }

@@ -70,7 +70,7 @@ class Kettle {
 
         for (int i = 0; i < kettleNames.length; i++) {
             System.out.println("Comparing with: " + kettleNames[i]);
-            if (oldName.equals(kettleNames[i])) {   
+            if (oldName == kettleNames[i]) {   
                 kettleNames[i] = newName;         
                 return true;
             }
@@ -80,7 +80,7 @@ class Kettle {
 
     boolean delete(int index) {
         System.out.println("Delete using index");
-		System.out.println("The index:"+index)
+		System.out.println("The index:"+index);
 
         if (this.kettleNames == null) {
 			System.out.println("The kettleNames array is null.");
@@ -99,13 +99,13 @@ class Kettle {
 		System.out.println("The name:"+name);
 
         if (this.kettleNames == null || name == null) {
-			System.out.println("The name or kettleNames array is null.")
+			System.out.println("The name or kettleNames array is null.");
             return false;
         }
 
         for (int i = 0; i < kettleNames.length; i++) {
             System.out.println("Comparing with: " + kettleNames[i]);
-            if (name.equals(kettleNames[i])) {   
+            if (name == kettleNames[i]) {   
                 kettleNames[i] = null;
 				System.out.println("The name is deleted.");
                 return true;

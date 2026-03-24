@@ -29,7 +29,7 @@ class Steel {
         if (name != null && this.steelNames != null) {
 			System.out.println("The name and steelNames array is not null.");
             for (String temp : this.steelNames) {
-                if (name.equals(temp)) {
+                if (name == temp) {
                     return true;
                 }
             }
@@ -61,12 +61,12 @@ class Steel {
 		System.out.println("The newName:"+newName);
 
         if (this.steelNames == null || oldName == null || newName == null) {
-			System.old.println("The oldName or newName or steelNames is null.");
+			System.out.println("The oldName or newName or steelNames is null.");
             return false;
         }
 
         for (int i = 0; i < steelNames.length; i++) {
-            if (oldName.equals(steelNames[i])) {
+            if (oldName == steelNames[i]) {
                 steelNames[i] = newName;
                 return true;
             }
@@ -92,13 +92,15 @@ class Steel {
 
     boolean delete(String name) {
         System.out.println("Delete using name");
+		System.out.println("The name:"+name);
 
         if (this.steelNames == null || name == null) {
+			System.out.println("The name or steelNames array is null.");
             return false;
         }
 
         for (int i = 0; i < steelNames.length; i++) {
-            if (name.equals(steelNames[i])) {
+            if (name == steelNames[i]) {
                 steelNames[i] = null;
                 return true;
             }

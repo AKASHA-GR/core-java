@@ -89,7 +89,7 @@ class Tree{
         }
 
         for (int i = 0; i < names.length; i++) {
-            if (oldName.equals(names[i])) { 
+            if (oldName == names[i]) { 
                 names[i] = newName;         
                 return true;
             }
@@ -125,7 +125,7 @@ class Tree{
         }
 
         for (int i = 0; i < names.length; i++) {
-            if (name.equals(names[i])) { 
+            if (name == names[i]) { 
                 names[i] = null;         
                 return true;
             }
