@@ -1,0 +1,14 @@
+enum Type{
+	CLOTH,
+	SOAP,
+	SHAMPU,
+	BOCK,
+	PHONE,
+	LAPTOP,
+	BAG,
+	CAR,
+	BIKE,
+	PEN,
+	WATCH
+
+}
