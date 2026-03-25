@@ -185,11 +185,12 @@ class ProductStore{
 			System.out.println("The product array and warrent year is not null.");
 			
 			for(Product products:this.product){
-				System.out.println("Compare with :"+products.year);
+				//System.out.println("Compare with :"+products.year);
 				if(products != null){
 						if(products.year == year){
 						products.printInfo();
 						System.out.println("");
+						
 					}
 				}
 			}
@@ -205,9 +206,51 @@ class ProductStore{
 		System.out.println("The type:"+type);
 		
 		if(this.product != null && type != null){
+			System.out.println("The product array and type is not null.");
 			
+			for(Product products:this.product){
+				//System.out.println("Compare with:"+products.type);
+				if(products != null){
+					if(products.type == type){
+						products.printInfo();
+						System.out.println("");
+						
+					}
+				}
+			}
 			
+		}else{
+			System.out.println("The product array or type is null.");
 		}
+	}
+	
+	
+	boolean checkWarrantyExpiredByUniqueId(int uniqueId){
+		System.out.println("The check Warranty Expired By UniqueId.");
+		System.out.println("The uniqueId:"+uniqueId);
+		
+		boolean found = false;
+		
+		if(this.product != null){
+			System.out.println("The product array and uniqueId is not null.");
+			if(uniqueId>0 && uniqueId<12){
+				for(Product products:this.product){
+					//System.out.println("compare with:"+products.uniqueId);
+					if(products != null){
+						if(products.uniqueId == uniqueId){
+							if(products.warrentyExpired == true){
+								found = true;
+								break;
+							}
+						}
+					}
+				}
+			}
+			
+		}else{
+			System.out.println("The product array or uniqueId is null.");
+		}
+		return false;
 	}
 
 

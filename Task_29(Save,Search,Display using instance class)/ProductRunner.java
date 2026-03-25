@@ -41,6 +41,16 @@ class ProductRunner{
 		
 		Product product10 = new Product("Hamam","Mumbai","02-18-2026",Type.SOAP,42,"Dronna",WarrentYears.THREE,false,10,"India");
 		productstore.save(product10);
+		System.out.println("");
+		
+		Product product11 = new Product("clinic plus","Bengaluru","03-19-2026",Type.SHAMPU,1,"Guru raj",WarrentYears.ONE,false,11,"India");
+		productstore.save(product11);
+		System.out.println("");
+		
+		Product product12 = new Product("AllClear","Mangaluru","01-10-2026",Type.SHAMPU,2,"Kumar",WarrentYears.TWO,false,12,"India");
+		productstore.save(product12);
+		
+		
 		System.out.println("======================================================================================");
 		System.out.println("");
 		
@@ -106,14 +116,22 @@ class ProductRunner{
 		System.out.println("======================================================================================");
 		
 		
-		//get all info by 
+		//get all info by warrantyYears
 		
 		productstore.getAllByWarrantyYears(WarrentYears.TWO);
 		System.out.println("======================================================================================");
 		
 		
+		// get all info by type
 		
+		productstore.getAllByType(Type.SHAMPU);
 		System.out.println("======================================================================================");
+		
+		
+		// check WarrantyExpired By UniqueId
+		
+		boolean ref3 = productstore.checkWarrantyExpiredByUniqueId(9);
+		System.out.println("The WarrantyExpired:"+ref3);
 		
 		
 	}
