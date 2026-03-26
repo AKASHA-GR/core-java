@@ -9,6 +9,11 @@ enum Type{
 	CAR,
 	BIKE,
 	PEN,
-	WATCH
+	WATCH,
+	KEYBOARD,
+	MOUSE,
+    FRUITS,
+	VEGETABLES,
+	CAMERA
 
 }
