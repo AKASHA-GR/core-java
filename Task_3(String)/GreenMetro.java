@@ -1,0 +1,70 @@
+//12. Program to store and print all metro stations in Green line in Bengaluru
+
+class GreenMetro{
+	public static void main(String[] args){
+		String greenmetro="1.Madavara";
+		System.out.println(greenmetro);
+		greenmetro="2.Chikkabidakallu";
+		System.out.println(greenmetro);
+		greenmetro="3.Manjunathnagar";
+		System.out.println(greenmetro);
+		greenmetro="4.Nagasandra";
+		System.out.println(greenmetro);
+		greenmetro="5.Dasarahalli";
+		System.out.println(greenmetro);
+		greenmetro="6.Jalahalli";
+		System.out.println(greenmetro);
+		greenmetro="7.Peenya Industry";
+		System.out.println(greenmetro);
+		greenmetro="8.Peenya";
+		System.out.println(greenmetro);
+		greenmetro="9.Goragunteapalya";
+		System.out.println(greenmetro);
+		greenmetro="10.Yeshwanthpur";
+		System.out.println(greenmetro);
+		greenmetro="11.Sandal Soap Factory";
+		System.out.println(greenmetro);
+		greenmetro="12.Mahalakshmi";
+		System.out.println(greenmetro);
+		greenmetro="13.Rajajinagar";
+		System.out.println(greenmetro);
+		greenmetro="14.Kuvempu road";
+		System.out.println(greenmetro);
+		greenmetro="15.Srirampur";
+		System.out.println(greenmetro);
+		greenmetro="16.Mantri Square Sampige Road";
+		System.out.println(greenmetro);
+		greenmetro="17.Nadaprabhu Kempegowda Station";
+		System.out.println(greenmetro);
+		greenmetro="18.Chickpete";
+		System.out.println(greenmetro);
+		greenmetro="19.KR Market";
+		System.out.println(greenmetro);
+		greenmetro="20.National College";
+		System.out.println(greenmetro);
+		greenmetro="21.Lalbagh";
+		System.out.println(greenmetro);
+		greenmetro="22.south end circle";
+		System.out.println(greenmetro);
+		greenmetro="23.Jayanagara";
+		System.out.println(greenmetro);
+		greenmetro="24.RV Road";
+		System.out.println(greenmetro);
+		greenmetro="25.Banashankari";
+		System.out.println(greenmetro);
+		greenmetro="26.Jaya Prakash Nagar";
+		System.out.println(greenmetro);
+		greenmetro="27.Yelachenahalli";
+		System.out.println(greenmetro);
+		greenmetro="28.Konanakunte Cross";
+		System.out.println(greenmetro);
+		greenmetro="29.Doddakallasandra";
+		System.out.println(greenmetro);
+		greenmetro="30.Vajarahalli";
+		System.out.println(greenmetro);
+		greenmetro="31.Thalaghattapura";
+		System.out.println(greenmetro);
+		greenmetro="32.Silk Industri";
+		System.out.println(greenmetro);
+	}
+}
