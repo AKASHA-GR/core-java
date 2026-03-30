@@ -1,0 +1,4 @@
+//Declare below classes, demo inheritance. Add Subclass or parent class . Add 3 instance variables in parent class, then add 5 instance variables in subclass. Then add two methods in parent class and add one method in subclass . Main Method 
+1.Create two instance of subclass using same type , then init all the variables and invoke all the methods IndianArmy indianArmy=new IndianArmy(); 
+2. Create two instance using parent class type , then init all variables and invoke all method Army army=new IndianArmy(); 
+3. Create two instance of parent class , then init all variables and invoke all methods. Army army=new Army(); clock,War, Baloon,PowerBank , Army GameBoard, Orbit, Bar, Opener,Factory, Media , Soldier, Slide,Carrier, Instrument
