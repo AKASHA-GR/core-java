@@ -14,18 +14,18 @@ class WarZoneRunner{
 		System.out.println(warZone.totleLoss);
 		
 		War war = new WarZone();
-		System.out.println(warZone.numberOfWar);
-		System.out.println(warZone.year);
-		System.out.println(warZone.date);
-		warZone.destroed();
-		warZone.defended();
+		System.out.println(war.numberOfWar);
+		System.out.println(war.year);
+		System.out.println(war.date);
+		war.destroed();
+		war.defended();
 		
-		War war = new War();
-		System.out.println(warZone.numberOfWar);
-		System.out.println(warZone.year);
-		System.out.println(warZone.date);
-		warZone.destroed();
-		warZone.defended();
+		War wars = new War();
+		System.out.println(wars.numberOfWar);
+		System.out.println(wars.year);
+		System.out.println(wars.date);
+		wars.destroed();
+		wars.defended();
 		
 	}
 }

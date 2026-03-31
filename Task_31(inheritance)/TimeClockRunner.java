@@ -14,18 +14,18 @@ class TimeClockRunner{
 		timeClock.displayTime();
 		
 		Clock clock = new TimeClock();
-		System.out.println(timeClock.brand);
-		System.out.println(timeClock.price);
-		System.out.println(timeClock.location);
-		timeClock.hours();
-		timeClock.time();
+		System.out.println(clock.brand);
+		System.out.println(clock.price);
+		System.out.println(clock.location);
+		clock.hours();
+		clock.time();
 		
-		Clock clock = new Clock();
-		System.out.println(timeClock.brand);
-		System.out.println(timeClock.price);
-		System.out.println(timeClock.location);
-		timeClock.hours();
-		timeClock.time();
+		Clock clocks = new Clock();
+		System.out.println(clocks.brand);
+		System.out.println(clocks.price);
+		System.out.println(clocks.location);
+		clocks.hours();
+		clocks.time();
 		
 	}
 }
