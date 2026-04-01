@@ -1,0 +1,2 @@
+class Department extends ItCompany{  
+}
