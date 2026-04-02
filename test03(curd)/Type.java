@@ -1,0 +1,7 @@
+enum Type{
+	GROCERY,
+	ELECTRONIC,
+	DARIY,
+	CLOTH
+	
+}
