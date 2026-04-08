@@ -63,6 +63,6 @@ public class ToyInfo {
                 }
             }
         }
-        return false;
+        return found;
     }
 }
