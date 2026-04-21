@@ -16,7 +16,7 @@ public class City {
         System.out.println("Number of district in a City:"+this.nuOfDistrict);
 
         for (District district:this.districts){
-            System.out.println("Compare with:"+district);
+            //System.out.println("Compare with:"+district);
             if(district != null){
                 district.DistrictInfo();
             }

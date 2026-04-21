@@ -16,7 +16,10 @@ public class Country {
         president.presidentInfo();
 
         for (State state1:this.state){
-            state1.stateInfo();
+            if(state1 != null){
+                state1.stateInfo();
+            }
+
             System.out.println();
         }
     }

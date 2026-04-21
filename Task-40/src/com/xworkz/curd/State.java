@@ -16,7 +16,7 @@ public class State {
         System.out.println("The number of population in state:"+this.population);
 
         for (City city:this.cities){
-            System.out.println("Compare with:"+city);
+            //System.out.println("Compare with:"+city);
             if(city != null){
                 city.cityInfo();
             }
