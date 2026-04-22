@@ -6,7 +6,9 @@ public class Oparation {
     Country[] countries;
     State[] states;
     City[] cities;
+    Collector[] collectors;
     int currentIndex = 0;
+
 
 
     public Oparation(Country[] countries){
@@ -17,6 +19,9 @@ public class Oparation {
     }
     public Oparation(City[] cities){
         this.cities = cities;
+    }
+    public Oparation(Collector[] collectors){
+        this.collectors = collectors;
     }
 
 
@@ -122,5 +127,56 @@ public class Oparation {
             System.out.println("The Array or name is null.");
         }
         return false;
+    }
+
+
+    public int noOfDistrictByCityName(String cityName){
+        System.out.println("The fined number of district by City name.");
+        int count = 0;
+
+        if(this.cities != null && cityName != null){
+            System.out.println("The cities array is not null.");
+
+            for (City city:this.cities){
+                if (city != null){
+                    if(city.name == cityName){
+                        return city.nuOfDistrict;
+                    }
+                }
+            }
+
+        }else {
+            System.out.println("The cities array or cityname is null.");
+        }
+        return count;
+    }
+
+
+    public boolean countryByCollectorName(String collectorName){
+        if(this.collectors != null && this.countries != null && collectorName != null){
+            System.out.println("The collectore array and collectorName is not null.");
+
+            for (Collector collector:this.collectors){
+                System.out.println("compareing");
+                if(collector != null){
+                    System.out.println("not null");
+                    if(collector.name == collectorName){
+                        for(Country country:this.countries){
+                            country.countryInfo();
+                        }
+
+                    }else{
+                        System.out.println("The collector name is not there.");
+                    }
+
+                    return true;
+                }
+            }
+
+        }else {
+            System.out.println("The collectore array and collectorName is null.");
+        }
+        return false;
+
     }
 }

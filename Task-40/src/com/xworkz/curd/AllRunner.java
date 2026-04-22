@@ -3,6 +3,7 @@ package com.xworkz.curd;
 public class AllRunner {
     public static void main(String[] args) {
 
+
         Collector collector = new Collector("Akasha GR",201);
         collector.collectorInfo();
         System.out.println();
@@ -75,11 +76,27 @@ public class AllRunner {
         System.out.println();
 
 
-        //Oparation operation2 = new Oparation(state1);
+
         boolean check2 = oparation1.searchCityByState("Karnataka");
         System.out.println("The city is found:"+ check2);
         System.out.println("555555555555555555555555555555555555555555555555555555555555555555555555555");
         System.out.println();
+
+
+        Oparation oparation2 = new Oparation(cities1);
+        int check3 = oparation2.noOfDistrictByCityName("Karnataka");
+        System.out.println("The number of district is found:"+check3);
+        System.out.println("6666666666666666666666666666666666666666666666666666666666666666666666666666");
+        System.out.println();
+
+        Collector[] collectors = new Collector[1];
+        Oparation oparation3 = new Oparation(collectors);
+        boolean check4 = oparation3.countryByCollectorName("Akasha GR");
+        System.out.println("The number of district is found:"+check4);
+        System.out.println("77777777777777777777777777777777777777777777777777777777777777777777777777777");
+
+
+
 
 
 
