@@ -57,42 +57,42 @@ public class AllRunner {
 
 
         Country[] countries = new Country[10];
-        Oparation oparation = new Oparation(countries);
+        CountryStore oparation = new CountryStore(countries);
         oparation.save(country);
         //oparation.save(country1);
         System.out.println("222222222222222222222222222222222222222222222222222222222222222222222");
         System.out.println();
 
 
-        boolean check = oparation.search("India");
+        Country check = oparation.findByName("India");
         System.out.println("The country is found:"+check);
         System.out.println("33333333333333333333333333333333333333333333333333333333333333333333333");
         System.out.println();
 
-        Oparation oparation1 = new Oparation(state1);
-        boolean check1 = oparation1.searchByState("Karnataka");
+
+        State check1 = oparation.findStateByStateName("Karnataka");
         System.out.println("The state is found:"+check1);
         System.out.println("4444444444444444444444444444444444444444444444444444444444444444444444444");
         System.out.println();
 
 
 
-        boolean check2 = oparation1.searchCityByState("Karnataka");
+        City[] check2 = oparation.findAllCityByStateName("Karnataka");
         System.out.println("The city is found:"+ check2);
         System.out.println("555555555555555555555555555555555555555555555555555555555555555555555555555");
         System.out.println();
 
 
-        Oparation oparation2 = new Oparation(cities1);
-        int check3 = oparation2.noOfDistrictByCityName("Karnataka");
+
+        int check3 = oparation.noOfDistrictByCityName("Karnataka");
         System.out.println("The number of district is found:"+check3);
         System.out.println("6666666666666666666666666666666666666666666666666666666666666666666666666666");
         System.out.println();
 
-        Collector[] collectors = new Collector[1];
-        Oparation oparation3 = new Oparation(collectors);
-        boolean check4 = oparation3.countryByCollectorName("Akasha GR");
-        System.out.println("The number of district is found:"+check4);
+
+        System.out.println("finding collector....");
+        boolean check4 = oparation.countryByCollectorName("Akasha GR");
+        System.out.println("collector found :"+check4);
         System.out.println("77777777777777777777777777777777777777777777777777777777777777777777777777777");
 
 
