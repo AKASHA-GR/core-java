@@ -14,5 +14,11 @@ public class Runner {
         System.out.println(CountryCode.USA.getCode());
         System.out.println(CountryCode.UAE);
         System.out.println(CountryCode.UK);
+        System.out.println();
+
+        //whatsUp
+        whatsUp whatsUp = new whatsUp();
+        whatsUp.run();
+        whatsUp.pause();
     }
 }
