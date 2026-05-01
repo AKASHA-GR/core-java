@@ -21,4 +21,9 @@ public class MetroRunner implements Metro{
     public void engine() {
         System.out.println("The engine is runing using current.");
     }
+
+    @Override
+    public void wheel() {
+        System.out.println("The wheel is made by metal.");
+    }
 }

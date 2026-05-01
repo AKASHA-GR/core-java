@@ -9,6 +9,7 @@ public class Runner {
         metroRunner.engine();
         metroRunner.funny();
         metroRunner.varun();
+        metroRunner.wheel();
 
 
     }
