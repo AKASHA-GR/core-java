@@ -1,0 +1,6 @@
+ Producers<--SuperMarket: purchase(),discount()-->DMart
+ Dell<--OS: boot(),start(),stop()-->Windows
+ Doctor<--Hospital: treatment()-->Apollo
+ Device<--Bluetooth : connect(),disConnect()--->Impl
+ User <-- Remote: turnOn,turnOff--->TataRemote
+ Kitchen<-- MenuCard : getItems(int,String)---> BindedMenuCard
