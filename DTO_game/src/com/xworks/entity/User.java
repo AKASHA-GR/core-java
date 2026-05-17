@@ -1,4 +1,4 @@
-package com.xworks.money;
+package com.xworks.entity;
 
 public class User {
 
