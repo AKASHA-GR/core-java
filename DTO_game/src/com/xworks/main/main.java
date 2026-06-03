@@ -24,4 +24,5 @@ public class Main {
         // Print DTO data
         System.out.println(dto);
     }
-}
+}.0
+
