@@ -7,13 +7,13 @@ import java.io.Serializable;
 
 @Getter
 @Setter
+@NoArgsConstructor
 @ToString
 @AllArgsConstructor
-@NoArgsConstructor
-public class ExpiredProductDetailDTO implements Serializable {
+public class DamagedProductDetailDTO implements Serializable {
     private String productName;
     private int productId;
-    private int numberOfItem;
-    private String expiredDate;
+    private int totleItem;
+    private int damagedItems;
     private int loss;
 }
