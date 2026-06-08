@@ -1,10 +1,10 @@
 package com.xworkz.runner;
 
-import com.xworkz.dao.SearchFlightDAO;
-import com.xworkz.dao.SearchFlightDAOImpl;
+import com.xworkz.dao.searchFlight.SearchFlightDAO;
+import com.xworkz.dao.searchFlight.SearchFlightDAOImpl;
 import com.xworkz.dto.SearchFlightDTO;
-import com.xworkz.service.PlaneService;
-import com.xworkz.service.PlaneServiceImpl;
+import com.xworkz.service.planeSearch.PlaneService;
+import com.xworkz.service.planeSearch.PlaneServiceImpl;
 
 public class SearchFlightRunner {
     public static void main(String[] args) {

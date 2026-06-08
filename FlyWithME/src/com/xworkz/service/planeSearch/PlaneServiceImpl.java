@@ -1,11 +1,11 @@
-package com.xworkz.service;
+package com.xworkz.service.planeSearch;
 
-import com.xworkz.dao.SearchFlightDAO;
+import com.xworkz.dao.searchFlight.SearchFlightDAO;
 import com.xworkz.dto.SearchFlightDTO;
 
 import java.util.Objects;
 
-public class PlaneServiceImpl implements PlaneService{
+public class PlaneServiceImpl implements PlaneService {
 
     private SearchFlightDAO searchFlightDAO;
 

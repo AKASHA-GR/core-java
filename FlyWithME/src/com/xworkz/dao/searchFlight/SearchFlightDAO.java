@@ -1,4 +1,4 @@
-package com.xworkz.dao;
+package com.xworkz.dao.searchFlight;
 
 import com.xworkz.dto.SearchFlightDTO;
 

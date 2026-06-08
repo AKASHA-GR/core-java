@@ -1,4 +1,4 @@
-package com.xworkz.service;
+package com.xworkz.service.planeSearch;
 
 import com.xworkz.dto.SearchFlightDTO;
 
