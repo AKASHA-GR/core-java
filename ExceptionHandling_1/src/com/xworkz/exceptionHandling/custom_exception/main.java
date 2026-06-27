@@ -1,0 +1,8 @@
+package com.xworkz.exceptionHandling.custom_exception;
+
+class InvalidAgeException extends Exception {
+
+    public InvalidAgeException(String message) {
+        super(message);
+    }
+}
